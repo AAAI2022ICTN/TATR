@@ -32,12 +32,18 @@ myConfig.py
 
 ## Step 1: NTM  
 We firstly only train NTM to get the pre-trained NTM by:  
+```bash
 python main.py  -load_path law/ -only_train_ntm -topic_num 300  
+```
 /law/ is the DATA PATH, 300 is the topic number.  
-Pre-trained NTM PATH:  
+Pre-trained NTM PATH:
+```bash
 model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e100.val_loss=414.776.sparsity=0.700.ntm_model
+```
 
 ## Step 2: 
-To train Feature Extracor and NTM jointly, and report evaluation by:  
+To train Feature Extracor and NTM jointly, and report evaluation by:
+```bash
 python main.py -load_path law/ -use_topic_represent -load_pretrain_ntm -joint_train -topic_num 300  -attn_mode MTA2 -check_pt_ntm_model_path model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e100.val_loss=414.776.sparsity=0.700.ntm_model
+```
 MTA2 is the Topic-Aware Attention Mechanism we reported in our paper.  
