@@ -1,0 +1,477 @@
+06/30/2021 11:28:22 [INFO] main: Parameters:
+06/30/2021 11:28:22 [INFO] main: joint_train    :    False
+06/30/2021 11:28:22 [INFO] main: joint_train_strategy    :    p_1_joint
+06/30/2021 11:28:22 [INFO] main: iterate_train_ntm    :    False
+06/30/2021 11:28:22 [INFO] main: p_seq2seq_e    :    3
+06/30/2021 11:28:22 [INFO] main: add_two_loss    :    False
+06/30/2021 11:28:22 [INFO] main: save_each_epoch    :    False
+06/30/2021 11:28:22 [INFO] main: start_checkpoint_at    :    2
+06/30/2021 11:28:22 [INFO] main: delta    :    0.1
+06/30/2021 11:28:22 [INFO] main: load_pretrain_ntm    :    False
+06/30/2021 11:28:22 [INFO] main: only_train_ntm    :    True
+06/30/2021 11:28:22 [INFO] main: check_pt_ntm_model_path    :    None
+06/30/2021 11:28:22 [INFO] main: ntm_warm_up_epochs    :    100
+06/30/2021 11:28:22 [INFO] main: use_topic_represent    :    False
+06/30/2021 11:28:22 [INFO] main: topic_num    :    300
+06/30/2021 11:28:22 [INFO] main: topic_type    :    z
+06/30/2021 11:28:22 [INFO] main: attn_mode    :    MHA
+06/30/2021 11:28:22 [INFO] main: target_sparsity    :    0.7
+06/30/2021 11:28:22 [INFO] main: gpuid    :    5
+06/30/2021 11:28:22 [INFO] main: linear_size    :    256
+06/30/2021 11:28:22 [INFO] main: att_dim    :    300
+06/30/2021 11:28:22 [INFO] main: load_path    :    /data/pengyu/tag_rec/law/
+06/30/2021 11:28:22 [INFO] main: vocab_size    :    50000
+06/30/2021 11:28:22 [INFO] main: bow_vocab    :    10000
+06/30/2021 11:28:22 [INFO] main: max_src_len    :    200
+06/30/2021 11:28:22 [INFO] main: max_trg_len    :    5
+06/30/2021 11:28:22 [INFO] main: num_layers    :    1
+06/30/2021 11:28:22 [INFO] main: emb_size    :    100
+06/30/2021 11:28:22 [INFO] main: hidden_size    :    128
+06/30/2021 11:28:22 [INFO] main: drop_rate    :    0.1
+06/30/2021 11:28:22 [INFO] main: bidirectional    :    True
+06/30/2021 11:28:22 [INFO] main: seed    :    9527
+06/30/2021 11:28:22 [INFO] main: batch_size    :    256
+06/30/2021 11:28:22 [INFO] main: learning_rate    :    0.001
+06/30/2021 11:28:22 [INFO] main: epochs    :    20
+06/30/2021 11:28:22 [INFO] main: start_epoch    :    1
+06/30/2021 11:28:22 [INFO] main: timemark    :    20210630-112822
+06/30/2021 11:28:22 [INFO] main: model_path    :    model/AU.topic_num300.ntm_warm_up_100.20210630-112822
+06/30/2021 11:28:22 [INFO] main: exp    :    AU.topic_num300.ntm_warm_up_100
+06/30/2021 11:28:22 [INFO] main: sample_data    :    False
+06/30/2021 11:28:22 [INFO] main: sample_data_size    :    0.07
+06/30/2021 11:28:22 [INFO] main: learning_rate_decay    :    0.5
+06/30/2021 11:28:22 [INFO] main: early_stop_tolerance    :    1
+06/30/2021 11:28:22 [INFO] main: train_from    :    
+06/30/2021 11:28:22 [INFO] main: device    :    cuda:5
+06/30/2021 11:28:25 [INFO] main: Time for loading the data: 2.9
+06/30/2021 11:28:28 [INFO] myTrain: ======================  Start Training  =========================
+06/30/2021 11:28:29 [INFO] myTrain: ====>Train epoch: 1 Average loss: 506.7598
+06/30/2021 11:28:29 [INFO] myTrain: Overall sparsity = 0.019, l1 strength = 0.00100
+06/30/2021 11:28:29 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:29 [INFO] myTrain: ====> Val epoch: 1 Average loss:  463.3883
+06/30/2021 11:28:30 [INFO] myTrain: ====>Train epoch: 2 Average loss: 486.9519
+06/30/2021 11:28:30 [INFO] myTrain: Overall sparsity = 0.019, l1 strength = 0.00160
+06/30/2021 11:28:30 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:30 [INFO] myTrain: ====> Val epoch: 2 Average loss:  459.3764
+06/30/2021 11:28:31 [INFO] myTrain: ====>Train epoch: 3 Average loss: 479.9985
+06/30/2021 11:28:31 [INFO] myTrain: Overall sparsity = 0.020, l1 strength = 0.00257
+06/30/2021 11:28:31 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:31 [INFO] myTrain: ====> Val epoch: 3 Average loss:  449.8439
+06/30/2021 11:28:31 [INFO] myTrain: ====>Train epoch: 4 Average loss: 472.1223
+06/30/2021 11:28:31 [INFO] myTrain: Overall sparsity = 0.020, l1 strength = 0.00412
+06/30/2021 11:28:31 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:31 [INFO] myTrain: ====> Val epoch: 4 Average loss:  444.2985
+06/30/2021 11:28:32 [INFO] myTrain: ====>Train epoch: 5 Average loss: 467.7140
+06/30/2021 11:28:32 [INFO] myTrain: Overall sparsity = 0.021, l1 strength = 0.00660
+06/30/2021 11:28:32 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:32 [INFO] myTrain: ====> Val epoch: 5 Average loss:  440.9184
+06/30/2021 11:28:33 [INFO] myTrain: ====>Train epoch: 6 Average loss: 462.4395
+06/30/2021 11:28:33 [INFO] myTrain: Overall sparsity = 0.021, l1 strength = 0.01057
+06/30/2021 11:28:33 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:33 [INFO] myTrain: ====> Val epoch: 6 Average loss:  435.4201
+06/30/2021 11:28:34 [INFO] myTrain: ====>Train epoch: 7 Average loss: 457.6499
+06/30/2021 11:28:34 [INFO] myTrain: Overall sparsity = 0.021, l1 strength = 0.01692
+06/30/2021 11:28:34 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:34 [INFO] myTrain: ====> Val epoch: 7 Average loss:  431.7688
+06/30/2021 11:28:35 [INFO] myTrain: ====>Train epoch: 8 Average loss: 453.1826
+06/30/2021 11:28:35 [INFO] myTrain: Overall sparsity = 0.021, l1 strength = 0.02709
+06/30/2021 11:28:35 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:35 [INFO] myTrain: ====> Val epoch: 8 Average loss:  426.5512
+06/30/2021 11:28:35 [INFO] myTrain: ====>Train epoch: 9 Average loss: 449.7439
+06/30/2021 11:28:35 [INFO] myTrain: Overall sparsity = 0.021, l1 strength = 0.04336
+06/30/2021 11:28:35 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:35 [INFO] myTrain: ====> Val epoch: 9 Average loss:  424.4541
+06/30/2021 11:28:36 [INFO] myTrain: ====>Train epoch: 10 Average loss: 446.3610
+06/30/2021 11:28:36 [INFO] myTrain: Overall sparsity = 0.021, l1 strength = 0.06940
+06/30/2021 11:28:36 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:36 [INFO] myTrain: ====> Val epoch: 10 Average loss:  421.1594
+06/30/2021 11:28:36 [INFO] myModel: Writing to model/AU.topic_num300.ntm_warm_up_100.20210630-112822/topwords_e10.txt
+06/30/2021 11:28:36 [INFO] myTrain: 
+Saving warm up ntm model into model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e10.val_loss=421.159.sparsity=0.021.ntm_model
+06/30/2021 11:28:37 [INFO] myTrain: ====>Train epoch: 11 Average loss: 443.1380
+06/30/2021 11:28:37 [INFO] myTrain: Overall sparsity = 0.021, l1 strength = 0.11112
+06/30/2021 11:28:37 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:37 [INFO] myTrain: ====> Val epoch: 11 Average loss:  419.2440
+06/30/2021 11:28:38 [INFO] myTrain: ====>Train epoch: 12 Average loss: 439.8683
+06/30/2021 11:28:38 [INFO] myTrain: Overall sparsity = 0.021, l1 strength = 0.17793
+06/30/2021 11:28:38 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:38 [INFO] myTrain: ====> Val epoch: 12 Average loss:  416.3260
+06/30/2021 11:28:39 [INFO] myTrain: ====>Train epoch: 13 Average loss: 436.6995
+06/30/2021 11:28:39 [INFO] myTrain: Overall sparsity = 0.020, l1 strength = 0.28494
+06/30/2021 11:28:39 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:39 [INFO] myTrain: ====> Val epoch: 13 Average loss:  413.8384
+06/30/2021 11:28:40 [INFO] myTrain: ====>Train epoch: 14 Average loss: 433.8684
+06/30/2021 11:28:40 [INFO] myTrain: Overall sparsity = 0.020, l1 strength = 0.45644
+06/30/2021 11:28:40 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:40 [INFO] myTrain: ====> Val epoch: 14 Average loss:  413.1570
+06/30/2021 11:28:40 [INFO] myTrain: ====>Train epoch: 15 Average loss: 431.1832
+06/30/2021 11:28:40 [INFO] myTrain: Overall sparsity = 0.019, l1 strength = 0.73135
+06/30/2021 11:28:40 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:40 [INFO] myTrain: ====> Val epoch: 15 Average loss:  411.7257
+06/30/2021 11:28:41 [INFO] myTrain: ====>Train epoch: 16 Average loss: 428.5439
+06/30/2021 11:28:41 [INFO] myTrain: Overall sparsity = 0.019, l1 strength = 1.17220
+06/30/2021 11:28:41 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:41 [INFO] myTrain: ====> Val epoch: 16 Average loss:  411.3421
+06/30/2021 11:28:42 [INFO] myTrain: ====>Train epoch: 17 Average loss: 426.2408
+06/30/2021 11:28:42 [INFO] myTrain: Overall sparsity = 0.019, l1 strength = 1.87935
+06/30/2021 11:28:42 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:42 [INFO] myTrain: ====> Val epoch: 17 Average loss:  408.8118
+06/30/2021 11:28:43 [INFO] myTrain: ====>Train epoch: 18 Average loss: 424.2506
+06/30/2021 11:28:43 [INFO] myTrain: Overall sparsity = 0.018, l1 strength = 3.01412
+06/30/2021 11:28:43 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:43 [INFO] myTrain: ====> Val epoch: 18 Average loss:  408.9654
+06/30/2021 11:28:44 [INFO] myTrain: ====>Train epoch: 19 Average loss: 422.1766
+06/30/2021 11:28:44 [INFO] myTrain: Overall sparsity = 0.018, l1 strength = 4.83581
+06/30/2021 11:28:44 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:44 [INFO] myTrain: ====> Val epoch: 19 Average loss:  408.1012
+06/30/2021 11:28:44 [INFO] myTrain: ====>Train epoch: 20 Average loss: 420.2080
+06/30/2021 11:28:44 [INFO] myTrain: Overall sparsity = 0.017, l1 strength = 7.76075
+06/30/2021 11:28:44 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:44 [INFO] myTrain: ====> Val epoch: 20 Average loss:  405.8859
+06/30/2021 11:28:44 [INFO] myModel: Writing to model/AU.topic_num300.ntm_warm_up_100.20210630-112822/topwords_e20.txt
+06/30/2021 11:28:45 [INFO] myTrain: 
+Saving warm up ntm model into model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e20.val_loss=405.886.sparsity=0.017.ntm_model
+06/30/2021 11:28:46 [INFO] myTrain: ====>Train epoch: 21 Average loss: 418.5704
+06/30/2021 11:28:46 [INFO] myTrain: Overall sparsity = 0.017, l1 strength = 12.45750
+06/30/2021 11:28:46 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:46 [INFO] myTrain: ====> Val epoch: 21 Average loss:  406.3061
+06/30/2021 11:28:46 [INFO] myTrain: ====>Train epoch: 22 Average loss: 417.3638
+06/30/2021 11:28:46 [INFO] myTrain: Overall sparsity = 0.017, l1 strength = 19.99993
+06/30/2021 11:28:46 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:46 [INFO] myTrain: ====> Val epoch: 22 Average loss:  405.2147
+06/30/2021 11:28:47 [INFO] myTrain: ====>Train epoch: 23 Average loss: 415.7499
+06/30/2021 11:28:47 [INFO] myTrain: Overall sparsity = 0.016, l1 strength = 32.11769
+06/30/2021 11:28:47 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:47 [INFO] myTrain: ====> Val epoch: 23 Average loss:  403.2188
+06/30/2021 11:28:48 [INFO] myTrain: ====>Train epoch: 24 Average loss: 414.3531
+06/30/2021 11:28:48 [INFO] myTrain: Overall sparsity = 0.016, l1 strength = 51.59135
+06/30/2021 11:28:48 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:48 [INFO] myTrain: ====> Val epoch: 24 Average loss:  402.3479
+06/30/2021 11:28:49 [INFO] myTrain: ====>Train epoch: 25 Average loss: 412.5243
+06/30/2021 11:28:49 [INFO] myTrain: Overall sparsity = 0.015, l1 strength = 82.89748
+06/30/2021 11:28:49 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:49 [INFO] myTrain: ====> Val epoch: 25 Average loss:  402.3968
+06/30/2021 11:28:50 [INFO] myTrain: ====>Train epoch: 26 Average loss: 411.4535
+06/30/2021 11:28:50 [INFO] myTrain: Overall sparsity = 0.015, l1 strength = 133.23233
+06/30/2021 11:28:50 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:50 [INFO] myTrain: ====> Val epoch: 26 Average loss:  401.5952
+06/30/2021 11:28:50 [INFO] myTrain: ====>Train epoch: 27 Average loss: 410.3341
+06/30/2021 11:28:50 [INFO] myTrain: Overall sparsity = 0.015, l1 strength = 214.18867
+06/30/2021 11:28:50 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:50 [INFO] myTrain: ====> Val epoch: 27 Average loss:  401.0067
+06/30/2021 11:28:51 [INFO] myTrain: ====>Train epoch: 28 Average loss: 408.7562
+06/30/2021 11:28:51 [INFO] myTrain: Overall sparsity = 0.015, l1 strength = 344.38483
+06/30/2021 11:28:51 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:51 [INFO] myTrain: ====> Val epoch: 28 Average loss:  401.1060
+06/30/2021 11:28:52 [INFO] myTrain: ====>Train epoch: 29 Average loss: 407.6816
+06/30/2021 11:28:52 [INFO] myTrain: Overall sparsity = 0.015, l1 strength = 553.76263
+06/30/2021 11:28:52 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:52 [INFO] myTrain: ====> Val epoch: 29 Average loss:  400.4015
+06/30/2021 11:28:53 [INFO] myTrain: ====>Train epoch: 30 Average loss: 406.6936
+06/30/2021 11:28:53 [INFO] myTrain: Overall sparsity = 0.015, l1 strength = 890.46863
+06/30/2021 11:28:53 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:53 [INFO] myTrain: ====> Val epoch: 30 Average loss:  401.2625
+06/30/2021 11:28:53 [INFO] myModel: Writing to model/AU.topic_num300.ntm_warm_up_100.20210630-112822/topwords_e30.txt
+06/30/2021 11:28:53 [INFO] myTrain: 
+Saving warm up ntm model into model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e30.val_loss=401.263.sparsity=0.015.ntm_model
+06/30/2021 11:28:54 [INFO] myTrain: ====>Train epoch: 31 Average loss: 405.7933
+06/30/2021 11:28:54 [INFO] myTrain: Overall sparsity = 0.015, l1 strength = 1431.99316
+06/30/2021 11:28:54 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:54 [INFO] myTrain: ====> Val epoch: 31 Average loss:  398.5605
+06/30/2021 11:28:55 [INFO] myTrain: ====>Train epoch: 32 Average loss: 405.2621
+06/30/2021 11:28:55 [INFO] myTrain: Overall sparsity = 0.015, l1 strength = 2302.58057
+06/30/2021 11:28:55 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:55 [INFO] myTrain: ====> Val epoch: 32 Average loss:  399.7957
+06/30/2021 11:28:56 [INFO] myTrain: ====>Train epoch: 33 Average loss: 404.4358
+06/30/2021 11:28:56 [INFO] myTrain: Overall sparsity = 0.016, l1 strength = 3700.93872
+06/30/2021 11:28:56 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:56 [INFO] myTrain: ====> Val epoch: 33 Average loss:  399.2719
+06/30/2021 11:28:56 [INFO] myTrain: ====>Train epoch: 34 Average loss: 404.0919
+06/30/2021 11:28:56 [INFO] myTrain: Overall sparsity = 0.018, l1 strength = 5944.72705
+06/30/2021 11:28:56 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:56 [INFO] myTrain: ====> Val epoch: 34 Average loss:  398.8710
+06/30/2021 11:28:57 [INFO] myTrain: ====>Train epoch: 35 Average loss: 403.9163
+06/30/2021 11:28:57 [INFO] myTrain: Overall sparsity = 0.020, l1 strength = 9538.29395
+06/30/2021 11:28:57 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:57 [INFO] myTrain: ====> Val epoch: 35 Average loss:  397.7799
+06/30/2021 11:28:58 [INFO] myTrain: ====>Train epoch: 36 Average loss: 404.0488
+06/30/2021 11:28:58 [INFO] myTrain: Overall sparsity = 0.023, l1 strength = 15277.61035
+06/30/2021 11:28:58 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:58 [INFO] myTrain: ====> Val epoch: 36 Average loss:  396.4860
+06/30/2021 11:28:59 [INFO] myTrain: ====>Train epoch: 37 Average loss: 405.1146
+06/30/2021 11:28:59 [INFO] myTrain: Overall sparsity = 0.026, l1 strength = 24422.61133
+06/30/2021 11:28:59 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:28:59 [INFO] myTrain: ====> Val epoch: 37 Average loss:  396.6781
+06/30/2021 11:29:00 [INFO] myTrain: ====>Train epoch: 38 Average loss: 407.5462
+06/30/2021 11:29:00 [INFO] myTrain: Overall sparsity = 0.030, l1 strength = 38953.69141
+06/30/2021 11:29:00 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:00 [INFO] myTrain: ====> Val epoch: 38 Average loss:  397.3686
+06/30/2021 11:29:00 [INFO] myTrain: ====>Train epoch: 39 Average loss: 411.1614
+06/30/2021 11:29:00 [INFO] myTrain: Overall sparsity = 0.034, l1 strength = 61983.06250
+06/30/2021 11:29:00 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:00 [INFO] myTrain: ====> Val epoch: 39 Average loss:  398.0594
+06/30/2021 11:29:01 [INFO] myTrain: ====>Train epoch: 40 Average loss: 417.7568
+06/30/2021 11:29:01 [INFO] myTrain: Overall sparsity = 0.039, l1 strength = 98349.21094
+06/30/2021 11:29:01 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:01 [INFO] myTrain: ====> Val epoch: 40 Average loss:  397.1580
+06/30/2021 11:29:01 [INFO] myModel: Writing to model/AU.topic_num300.ntm_warm_up_100.20210630-112822/topwords_e40.txt
+06/30/2021 11:29:01 [INFO] myTrain: 
+Saving warm up ntm model into model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e40.val_loss=397.158.sparsity=0.039.ntm_model
+06/30/2021 11:29:02 [INFO] myTrain: ====>Train epoch: 41 Average loss: 427.4748
+06/30/2021 11:29:02 [INFO] myTrain: Overall sparsity = 0.049, l1 strength = 155470.37500
+06/30/2021 11:29:02 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:02 [INFO] myTrain: ====> Val epoch: 41 Average loss:  398.0806
+06/30/2021 11:29:03 [INFO] myTrain: ====>Train epoch: 42 Average loss: 441.5641
+06/30/2021 11:29:03 [INFO] myTrain: Overall sparsity = 0.069, l1 strength = 244093.23438
+06/30/2021 11:29:03 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:03 [INFO] myTrain: ====> Val epoch: 42 Average loss:  395.0695
+06/30/2021 11:29:04 [INFO] myTrain: ====>Train epoch: 43 Average loss: 460.4358
+06/30/2021 11:29:04 [INFO] myTrain: Overall sparsity = 0.104, l1 strength = 378125.62500
+06/30/2021 11:29:04 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:04 [INFO] myTrain: ====> Val epoch: 43 Average loss:  396.4183
+06/30/2021 11:29:05 [INFO] myTrain: ====>Train epoch: 44 Average loss: 481.6580
+06/30/2021 11:29:05 [INFO] myTrain: Overall sparsity = 0.163, l1 strength = 571493.00000
+06/30/2021 11:29:05 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:05 [INFO] myTrain: ====> Val epoch: 44 Average loss:  395.8628
+06/30/2021 11:29:05 [INFO] myTrain: ====>Train epoch: 45 Average loss: 500.4616
+06/30/2021 11:29:05 [INFO] myTrain: Overall sparsity = 0.245, l1 strength = 829357.00000
+06/30/2021 11:29:05 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:05 [INFO] myTrain: ====> Val epoch: 45 Average loss:  398.4788
+06/30/2021 11:29:06 [INFO] myTrain: ====>Train epoch: 46 Average loss: 511.7647
+06/30/2021 11:29:06 [INFO] myTrain: Overall sparsity = 0.340, l1 strength = 1136666.12500
+06/30/2021 11:29:06 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:06 [INFO] myTrain: ====> Val epoch: 46 Average loss:  399.8118
+06/30/2021 11:29:07 [INFO] myTrain: ====>Train epoch: 47 Average loss: 513.5558
+06/30/2021 11:29:07 [INFO] myTrain: Overall sparsity = 0.433, l1 strength = 1458975.00000
+06/30/2021 11:29:07 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:07 [INFO] myTrain: ====> Val epoch: 47 Average loss:  401.6574
+06/30/2021 11:29:08 [INFO] myTrain: ====>Train epoch: 48 Average loss: 509.0187
+06/30/2021 11:29:08 [INFO] myTrain: Overall sparsity = 0.507, l1 strength = 1755872.25000
+06/30/2021 11:29:08 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:08 [INFO] myTrain: ====> Val epoch: 48 Average loss:  406.0501
+06/30/2021 11:29:09 [INFO] myTrain: ====>Train epoch: 49 Average loss: 502.6492
+06/30/2021 11:29:09 [INFO] myTrain: Overall sparsity = 0.566, l1 strength = 2006832.87500
+06/30/2021 11:29:09 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:09 [INFO] myTrain: ====> Val epoch: 49 Average loss:  409.9289
+06/30/2021 11:29:09 [INFO] myTrain: ====>Train epoch: 50 Average loss: 496.6499
+06/30/2021 11:29:09 [INFO] myTrain: Overall sparsity = 0.606, l1 strength = 2201716.50000
+06/30/2021 11:29:09 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:09 [INFO] myTrain: ====> Val epoch: 50 Average loss:  412.0761
+06/30/2021 11:29:09 [INFO] myModel: Writing to model/AU.topic_num300.ntm_warm_up_100.20210630-112822/topwords_e50.txt
+06/30/2021 11:29:10 [INFO] myTrain: 
+Saving warm up ntm model into model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e50.val_loss=412.076.sparsity=0.606.ntm_model
+06/30/2021 11:29:10 [INFO] myTrain: ====>Train epoch: 51 Average loss: 491.7238
+06/30/2021 11:29:10 [INFO] myTrain: Overall sparsity = 0.633, l1 strength = 2350714.00000
+06/30/2021 11:29:10 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:10 [INFO] myTrain: ====> Val epoch: 51 Average loss:  413.8073
+06/30/2021 11:29:11 [INFO] myTrain: ====>Train epoch: 52 Average loss: 488.4855
+06/30/2021 11:29:11 [INFO] myTrain: Overall sparsity = 0.655, l1 strength = 2462975.75000
+06/30/2021 11:29:11 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:11 [INFO] myTrain: ====> Val epoch: 52 Average loss:  415.3978
+06/30/2021 11:29:12 [INFO] myTrain: ====>Train epoch: 53 Average loss: 485.2980
+06/30/2021 11:29:12 [INFO] myTrain: Overall sparsity = 0.668, l1 strength = 2541199.75000
+06/30/2021 11:29:12 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:12 [INFO] myTrain: ====> Val epoch: 53 Average loss:  416.9156
+06/30/2021 11:29:13 [INFO] myTrain: ====>Train epoch: 54 Average loss: 482.8447
+06/30/2021 11:29:13 [INFO] myTrain: Overall sparsity = 0.680, l1 strength = 2597541.75000
+06/30/2021 11:29:13 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:13 [INFO] myTrain: ====> Val epoch: 54 Average loss:  417.1223
+06/30/2021 11:29:13 [INFO] myTrain: ====>Train epoch: 55 Average loss: 480.8296
+06/30/2021 11:29:13 [INFO] myTrain: Overall sparsity = 0.691, l1 strength = 2633567.25000
+06/30/2021 11:29:13 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:13 [INFO] myTrain: ====> Val epoch: 55 Average loss:  420.7349
+06/30/2021 11:29:14 [INFO] myTrain: ====>Train epoch: 56 Average loss: 478.9765
+06/30/2021 11:29:14 [INFO] myTrain: Overall sparsity = 0.692, l1 strength = 2650366.25000
+06/30/2021 11:29:14 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:14 [INFO] myTrain: ====> Val epoch: 56 Average loss:  418.7142
+06/30/2021 11:29:15 [INFO] myTrain: ====>Train epoch: 57 Average loss: 477.6015
+06/30/2021 11:29:15 [INFO] myTrain: Overall sparsity = 0.703, l1 strength = 2665165.00000
+06/30/2021 11:29:15 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:15 [INFO] myTrain: ====> Val epoch: 57 Average loss:  420.9260
+06/30/2021 11:29:16 [INFO] myTrain: ====>Train epoch: 58 Average loss: 476.0868
+06/30/2021 11:29:16 [INFO] myTrain: Overall sparsity = 0.706, l1 strength = 2659685.75000
+06/30/2021 11:29:16 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:16 [INFO] myTrain: ====> Val epoch: 58 Average loss:  420.2553
+06/30/2021 11:29:16 [INFO] myTrain: ====>Train epoch: 59 Average loss: 474.7375
+06/30/2021 11:29:16 [INFO] myTrain: Overall sparsity = 0.708, l1 strength = 2648653.50000
+06/30/2021 11:29:16 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:16 [INFO] myTrain: ====> Val epoch: 59 Average loss:  419.6660
+06/30/2021 11:29:17 [INFO] myTrain: ====>Train epoch: 60 Average loss: 473.7097
+06/30/2021 11:29:17 [INFO] myTrain: Overall sparsity = 0.707, l1 strength = 2634158.75000
+06/30/2021 11:29:17 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:17 [INFO] myTrain: ====> Val epoch: 60 Average loss:  420.1704
+06/30/2021 11:29:17 [INFO] myModel: Writing to model/AU.topic_num300.ntm_warm_up_100.20210630-112822/topwords_e60.txt
+06/30/2021 11:29:17 [INFO] myTrain: 
+Saving warm up ntm model into model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e60.val_loss=420.170.sparsity=0.707.ntm_model
+06/30/2021 11:29:18 [INFO] myTrain: ====>Train epoch: 61 Average loss: 472.3717
+06/30/2021 11:29:18 [INFO] myTrain: Overall sparsity = 0.714, l1 strength = 2621051.75000
+06/30/2021 11:29:18 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:18 [INFO] myTrain: ====> Val epoch: 61 Average loss:  418.3448
+06/30/2021 11:29:19 [INFO] myTrain: ====>Train epoch: 62 Average loss: 471.5382
+06/30/2021 11:29:19 [INFO] myTrain: Overall sparsity = 0.716, l1 strength = 2594993.75000
+06/30/2021 11:29:19 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:19 [INFO] myTrain: ====> Val epoch: 62 Average loss:  419.9843
+06/30/2021 11:29:20 [INFO] myTrain: ====>Train epoch: 63 Average loss: 470.4251
+06/30/2021 11:29:20 [INFO] myTrain: Overall sparsity = 0.715, l1 strength = 2566555.25000
+06/30/2021 11:29:20 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:20 [INFO] myTrain: ====> Val epoch: 63 Average loss:  419.9408
+06/30/2021 11:29:20 [INFO] myTrain: ====>Train epoch: 64 Average loss: 469.5792
+06/30/2021 11:29:20 [INFO] myTrain: Overall sparsity = 0.716, l1 strength = 2540563.00000
+06/30/2021 11:29:20 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:20 [INFO] myTrain: ====> Val epoch: 64 Average loss:  420.0038
+06/30/2021 11:29:21 [INFO] myTrain: ====>Train epoch: 65 Average loss: 468.7343
+06/30/2021 11:29:21 [INFO] myTrain: Overall sparsity = 0.717, l1 strength = 2512275.00000
+06/30/2021 11:29:21 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:21 [INFO] myTrain: ====> Val epoch: 65 Average loss:  417.9638
+06/30/2021 11:29:22 [INFO] myTrain: ====>Train epoch: 66 Average loss: 467.8325
+06/30/2021 11:29:22 [INFO] myTrain: Overall sparsity = 0.715, l1 strength = 2482037.00000
+06/30/2021 11:29:22 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:22 [INFO] myTrain: ====> Val epoch: 66 Average loss:  417.4388
+06/30/2021 11:29:23 [INFO] myTrain: ====>Train epoch: 67 Average loss: 467.3275
+06/30/2021 11:29:23 [INFO] myTrain: Overall sparsity = 0.719, l1 strength = 2456650.25000
+06/30/2021 11:29:23 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:23 [INFO] myTrain: ====> Val epoch: 67 Average loss:  418.6878
+06/30/2021 11:29:23 [INFO] myTrain: ====>Train epoch: 68 Average loss: 466.3488
+06/30/2021 11:29:23 [INFO] myTrain: Overall sparsity = 0.712, l1 strength = 2423791.75000
+06/30/2021 11:29:23 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:23 [INFO] myTrain: ====> Val epoch: 68 Average loss:  419.0470
+06/30/2021 11:29:24 [INFO] myTrain: ====>Train epoch: 69 Average loss: 465.6303
+06/30/2021 11:29:24 [INFO] myTrain: Overall sparsity = 0.711, l1 strength = 2403557.75000
+06/30/2021 11:29:24 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:24 [INFO] myTrain: ====> Val epoch: 69 Average loss:  418.2694
+06/30/2021 11:29:25 [INFO] myTrain: ====>Train epoch: 70 Average loss: 465.2525
+06/30/2021 11:29:25 [INFO] myTrain: Overall sparsity = 0.713, l1 strength = 2386002.25000
+06/30/2021 11:29:25 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:25 [INFO] myTrain: ====> Val epoch: 70 Average loss:  418.4473
+06/30/2021 11:29:25 [INFO] myModel: Writing to model/AU.topic_num300.ntm_warm_up_100.20210630-112822/topwords_e70.txt
+06/30/2021 11:29:25 [INFO] myTrain: 
+Saving warm up ntm model into model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e70.val_loss=418.447.sparsity=0.713.ntm_model
+06/30/2021 11:29:26 [INFO] myTrain: ====>Train epoch: 71 Average loss: 464.7117
+06/30/2021 11:29:26 [INFO] myTrain: Overall sparsity = 0.716, l1 strength = 2364076.00000
+06/30/2021 11:29:26 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:26 [INFO] myTrain: ====> Val epoch: 71 Average loss:  418.2298
+06/30/2021 11:29:26 [INFO] myTrain: ====>Train epoch: 72 Average loss: 464.1782
+06/30/2021 11:29:26 [INFO] myTrain: Overall sparsity = 0.712, l1 strength = 2337318.00000
+06/30/2021 11:29:26 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:26 [INFO] myTrain: ====> Val epoch: 72 Average loss:  418.1098
+06/30/2021 11:29:27 [INFO] myTrain: ====>Train epoch: 73 Average loss: 463.9743
+06/30/2021 11:29:27 [INFO] myTrain: Overall sparsity = 0.712, l1 strength = 2317492.00000
+06/30/2021 11:29:27 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:27 [INFO] myTrain: ====> Val epoch: 73 Average loss:  417.2724
+06/30/2021 11:29:28 [INFO] myTrain: ====>Train epoch: 74 Average loss: 463.2384
+06/30/2021 11:29:28 [INFO] myTrain: Overall sparsity = 0.715, l1 strength = 2297650.75000
+06/30/2021 11:29:28 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:28 [INFO] myTrain: ====> Val epoch: 74 Average loss:  417.7205
+06/30/2021 11:29:29 [INFO] myTrain: ====>Train epoch: 75 Average loss: 462.6733
+06/30/2021 11:29:29 [INFO] myTrain: Overall sparsity = 0.709, l1 strength = 2274373.50000
+06/30/2021 11:29:29 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:29 [INFO] myTrain: ====> Val epoch: 75 Average loss:  417.2349
+06/30/2021 11:29:29 [INFO] myTrain: ====>Train epoch: 76 Average loss: 461.8425
+06/30/2021 11:29:29 [INFO] myTrain: Overall sparsity = 0.710, l1 strength = 2260616.25000
+06/30/2021 11:29:29 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:29 [INFO] myTrain: ====> Val epoch: 76 Average loss:  417.2064
+06/30/2021 11:29:30 [INFO] myTrain: ====>Train epoch: 77 Average loss: 461.9617
+06/30/2021 11:29:30 [INFO] myTrain: Overall sparsity = 0.713, l1 strength = 2245628.25000
+06/30/2021 11:29:30 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:30 [INFO] myTrain: ====> Val epoch: 77 Average loss:  417.1491
+06/30/2021 11:29:31 [INFO] myTrain: ====>Train epoch: 78 Average loss: 461.4511
+06/30/2021 11:29:31 [INFO] myTrain: Overall sparsity = 0.709, l1 strength = 2225280.75000
+06/30/2021 11:29:31 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:31 [INFO] myTrain: ====> Val epoch: 78 Average loss:  416.5518
+06/30/2021 11:29:31 [INFO] myTrain: ====>Train epoch: 79 Average loss: 460.9956
+06/30/2021 11:29:31 [INFO] myTrain: Overall sparsity = 0.706, l1 strength = 2212028.50000
+06/30/2021 11:29:31 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:31 [INFO] myTrain: ====> Val epoch: 79 Average loss:  416.4845
+06/30/2021 11:29:32 [INFO] myTrain: ====>Train epoch: 80 Average loss: 460.7613
+06/30/2021 11:29:32 [INFO] myTrain: Overall sparsity = 0.710, l1 strength = 2202424.50000
+06/30/2021 11:29:32 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:32 [INFO] myTrain: ====> Val epoch: 80 Average loss:  417.2238
+06/30/2021 11:29:32 [INFO] myModel: Writing to model/AU.topic_num300.ntm_warm_up_100.20210630-112822/topwords_e80.txt
+06/30/2021 11:29:32 [INFO] myTrain: 
+Saving warm up ntm model into model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e80.val_loss=417.224.sparsity=0.710.ntm_model
+06/30/2021 11:29:33 [INFO] myTrain: ====>Train epoch: 81 Average loss: 460.3023
+06/30/2021 11:29:33 [INFO] myTrain: Overall sparsity = 0.707, l1 strength = 2187537.50000
+06/30/2021 11:29:33 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:33 [INFO] myTrain: ====> Val epoch: 81 Average loss:  418.4598
+06/30/2021 11:29:34 [INFO] myTrain: ====>Train epoch: 82 Average loss: 460.0740
+06/30/2021 11:29:34 [INFO] myTrain: Overall sparsity = 0.710, l1 strength = 2176810.75000
+06/30/2021 11:29:34 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:34 [INFO] myTrain: ====> Val epoch: 82 Average loss:  416.6596
+06/30/2021 11:29:35 [INFO] myTrain: ====>Train epoch: 83 Average loss: 459.7947
+06/30/2021 11:29:35 [INFO] myTrain: Overall sparsity = 0.706, l1 strength = 2161449.25000
+06/30/2021 11:29:35 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:35 [INFO] myTrain: ====> Val epoch: 83 Average loss:  414.4439
+06/30/2021 11:29:35 [INFO] myTrain: ====>Train epoch: 84 Average loss: 459.6906
+06/30/2021 11:29:35 [INFO] myTrain: Overall sparsity = 0.708, l1 strength = 2151894.00000
+06/30/2021 11:29:35 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:35 [INFO] myTrain: ====> Val epoch: 84 Average loss:  415.9666
+06/30/2021 11:29:36 [INFO] myTrain: ====>Train epoch: 85 Average loss: 458.9209
+06/30/2021 11:29:36 [INFO] myTrain: Overall sparsity = 0.705, l1 strength = 2139491.00000
+06/30/2021 11:29:36 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:36 [INFO] myTrain: ====> Val epoch: 85 Average loss:  416.5546
+06/30/2021 11:29:37 [INFO] myTrain: ====>Train epoch: 86 Average loss: 458.6900
+06/30/2021 11:29:37 [INFO] myTrain: Overall sparsity = 0.705, l1 strength = 2132122.75000
+06/30/2021 11:29:37 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:37 [INFO] myTrain: ====> Val epoch: 86 Average loss:  416.2651
+06/30/2021 11:29:37 [INFO] myTrain: ====>Train epoch: 87 Average loss: 458.7374
+06/30/2021 11:29:37 [INFO] myTrain: Overall sparsity = 0.708, l1 strength = 2124547.75000
+06/30/2021 11:29:37 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:37 [INFO] myTrain: ====> Val epoch: 87 Average loss:  414.7740
+06/30/2021 11:29:38 [INFO] myTrain: ====>Train epoch: 88 Average loss: 458.6102
+06/30/2021 11:29:38 [INFO] myTrain: Overall sparsity = 0.705, l1 strength = 2113397.25000
+06/30/2021 11:29:38 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:38 [INFO] myTrain: ====> Val epoch: 88 Average loss:  414.7237
+06/30/2021 11:29:39 [INFO] myTrain: ====>Train epoch: 89 Average loss: 458.0334
+06/30/2021 11:29:39 [INFO] myTrain: Overall sparsity = 0.703, l1 strength = 2106053.75000
+06/30/2021 11:29:39 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:39 [INFO] myTrain: ====> Val epoch: 89 Average loss:  416.2664
+06/30/2021 11:29:40 [INFO] myTrain: ====>Train epoch: 90 Average loss: 457.9072
+06/30/2021 11:29:40 [INFO] myTrain: Overall sparsity = 0.705, l1 strength = 2101841.25000
+06/30/2021 11:29:40 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:40 [INFO] myTrain: ====> Val epoch: 90 Average loss:  415.9209
+06/30/2021 11:29:40 [INFO] myModel: Writing to model/AU.topic_num300.ntm_warm_up_100.20210630-112822/topwords_e90.txt
+06/30/2021 11:29:40 [INFO] myTrain: 
+Saving warm up ntm model into model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e90.val_loss=415.921.sparsity=0.705.ntm_model
+06/30/2021 11:29:41 [INFO] myTrain: ====>Train epoch: 91 Average loss: 457.6703
+06/30/2021 11:29:41 [INFO] myTrain: Overall sparsity = 0.703, l1 strength = 2095017.37500
+06/30/2021 11:29:41 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:41 [INFO] myTrain: ====> Val epoch: 91 Average loss:  416.5644
+06/30/2021 11:29:41 [INFO] myTrain: ====>Train epoch: 92 Average loss: 457.6944
+06/30/2021 11:29:41 [INFO] myTrain: Overall sparsity = 0.702, l1 strength = 2090280.50000
+06/30/2021 11:29:41 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:41 [INFO] myTrain: ====> Val epoch: 92 Average loss:  413.5189
+06/30/2021 11:29:42 [INFO] myTrain: ====>Train epoch: 93 Average loss: 457.6789
+06/30/2021 11:29:42 [INFO] myTrain: Overall sparsity = 0.705, l1 strength = 2086816.62500
+06/30/2021 11:29:42 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:42 [INFO] myTrain: ====> Val epoch: 93 Average loss:  413.8068
+06/30/2021 11:29:43 [INFO] myTrain: ====>Train epoch: 94 Average loss: 457.1479
+06/30/2021 11:29:43 [INFO] myTrain: Overall sparsity = 0.702, l1 strength = 2079814.87500
+06/30/2021 11:29:43 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:43 [INFO] myTrain: ====> Val epoch: 94 Average loss:  415.9343
+06/30/2021 11:29:43 [INFO] myTrain: ====>Train epoch: 95 Average loss: 457.1184
+06/30/2021 11:29:43 [INFO] myTrain: Overall sparsity = 0.703, l1 strength = 2077015.87500
+06/30/2021 11:29:43 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:43 [INFO] myTrain: ====> Val epoch: 95 Average loss:  414.5177
+06/30/2021 11:29:44 [INFO] myTrain: ====>Train epoch: 96 Average loss: 456.8932
+06/30/2021 11:29:44 [INFO] myTrain: Overall sparsity = 0.702, l1 strength = 2072853.62500
+06/30/2021 11:29:44 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:44 [INFO] myTrain: ====> Val epoch: 96 Average loss:  413.5050
+06/30/2021 11:29:45 [INFO] myTrain: ====>Train epoch: 97 Average loss: 456.5370
+06/30/2021 11:29:45 [INFO] myTrain: Overall sparsity = 0.704, l1 strength = 2069331.00000
+06/30/2021 11:29:45 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:45 [INFO] myTrain: ====> Val epoch: 97 Average loss:  412.6693
+06/30/2021 11:29:46 [INFO] myTrain: ====>Train epoch: 98 Average loss: 456.4929
+06/30/2021 11:29:46 [INFO] myTrain: Overall sparsity = 0.705, l1 strength = 2064215.62500
+06/30/2021 11:29:46 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:46 [INFO] myTrain: ====> Val epoch: 98 Average loss:  414.7790
+06/30/2021 11:29:46 [INFO] myTrain: ====>Train epoch: 99 Average loss: 456.4297
+06/30/2021 11:29:46 [INFO] myTrain: Overall sparsity = 0.703, l1 strength = 2057469.75000
+06/30/2021 11:29:46 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:46 [INFO] myTrain: ====> Val epoch: 99 Average loss:  413.5566
+06/30/2021 11:29:47 [INFO] myTrain: ====>Train epoch: 100 Average loss: 456.2299
+06/30/2021 11:29:47 [INFO] myTrain: Overall sparsity = 0.700, l1 strength = 2052967.25000
+06/30/2021 11:29:47 [INFO] myTrain: Target sparsity = 0.700
+06/30/2021 11:29:47 [INFO] myTrain: ====> Val epoch: 100 Average loss:  414.7759
+06/30/2021 11:29:47 [INFO] myModel: Writing to model/AU.topic_num300.ntm_warm_up_100.20210630-112822/topwords_e100.txt
+06/30/2021 11:29:47 [INFO] myTrain: 
+Saving warm up ntm model into model/AU.topic_num300.ntm_warm_up_100.20210630-112822/e100.val_loss=414.776.sparsity=0.700.ntm_model
