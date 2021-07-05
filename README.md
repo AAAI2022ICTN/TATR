@@ -26,7 +26,9 @@ Data: https://ia800107.us.archive.org/view_archive.php?archive=/27/items/stackex
 Take dataset Law as an example.  
 ## configuration file  
 Please confirm the corresponding configuration file:  
-myConfig.py  
+```bash
+myConfig.py
+```
 
 ## Step 1: NTM  
 We firstly only train NTM to get the pre-trained NTM by:  
